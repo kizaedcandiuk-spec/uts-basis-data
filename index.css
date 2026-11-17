@@ -1,0 +1,93 @@
+/* Import Google Font biar makin rapi */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 0 20px;
+    color: #064e3b;
+    min-height: 100vh;
+    
+    /* Background Tema: Nuansa Hijau Emerald & Cream dengan Efek Butiran Air (Water Droplets / Fresh Dew) */
+    background-color: #022c22;
+    background-image: 
+        /* Efek butiran air / kilau embun menggunakan radial gradient halus */
+        radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.25) 0%, transparent 20%),
+        radial-gradient(circle at 85% 80%, rgba(217, 249, 157, 0.2) 0%, transparent 25%),
+        radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
+        /* Gradasi utama emerald ke cream */
+        linear-gradient(135deg, #065f46 0%, #047857 40%, #064e3b 70%, #fef3c7 100%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Efek Glassmorphism untuk Container Utama */
+.glass-container {
+    background: rgba(254, 243, 199, 0.12); /* Sentuhan cream transparan */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+h2 { 
+    color: #ecfdf5; 
+    font-weight: 700;
+    margin-top: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    color: #fef3c7; /* Warna cream lembut */
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Glassmorphism untuk Tabel */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f0fdf4;
+}
+
+th {
+    background: rgba(4, 120, 87, 0.5); /* Emerald transparan */
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+tr:nth-child(even) { 
+    background-color: rgba(255, 255, 255, 0.03); 
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: background 0.3s ease;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
